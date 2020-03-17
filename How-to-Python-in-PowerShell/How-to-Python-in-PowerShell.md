@@ -15,7 +15,7 @@ The prerequisites for following along with this post are:
 
 The goal of this blog post is to take what you know about Python and use it in PowerShell. The phenomenal part about these two languages is they are great for programming and automation scripting on any platform. With that being said, it's very good to know both. In most DevOps roles, you will see the need for someone to know at least one of these languages, but it's typical that knowing both is preferable.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0f47dbe2-1241-497d-ad77-41856c9e90fe/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0f47dbe2-1241-497d-ad77-41856c9e90fe/Untitled.png)
+![Code](images/1.png)
 
 ## What is PowerShell?
 
@@ -61,15 +61,15 @@ When running a script in Python, there would be a `.py` file saved somewhere. Si
 
 The below screenshot is a file saved with a `.py` extension.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eb3ab152-5c2a-4d16-9b79-d5f9336bd2c2/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eb3ab152-5c2a-4d16-9b79-d5f9336bd2c2/Untitled.png)
+![.PY](images/2.png)
 
 Below is a screenshot with a `.ps1` extension.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/baa3b863-644a-4e74-99df-d0221ee74e60/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/baa3b863-644a-4e74-99df-d0221ee74e60/Untitled.png)
+![.PS1](images/3.png)
 
 The final extension screenshot is for a `.psm1`
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a4c2e0fa-1ef7-4751-9308-e5ffabe467d0/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a4c2e0fa-1ef7-4751-9308-e5ffabe467d0/Untitled.png)
+![.PSM1](images/4.png)
 
 ## Output
 
@@ -79,11 +79,11 @@ Output in Python is typically from the `print()`method. The print method is buil
 
 In Python, you would write output in the `print()` method, run the script, and the script will look similar to the below.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/27e5db8e-0d6f-4ea5-bf57-f7886ebc4bbc/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/27e5db8e-0d6f-4ea5-bf57-f7886ebc4bbc/Untitled.png)
+![Hello World Python](images/5.png)
 
 When creating any output in PowerShell, using the `Write-Output` cmdlet will look very similar to Python.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5d028363-f52a-4f93-86ad-440a7b570427/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5d028363-f52a-4f93-86ad-440a7b570427/Untitled.png)
+![Hello World PowerShell](images/6.png)
 
 ## Variables
 
@@ -91,11 +91,11 @@ In the previous section you learned how to run code in PowerShell and create an 
 
 In Python, a variable will look like the below.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/940affb6-15d8-4124-b635-e4bf972be78d/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/940affb6-15d8-4124-b635-e4bf972be78d/Untitled.png)
+![Python variable](images/7.png)
 
 In PowerShell, it's the same concept, but the variable looks different because of the `$` sign.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/234500ed-afbb-46e4-83c9-4ccfebd02582/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/234500ed-afbb-46e4-83c9-4ccfebd02582/Untitled.png)
+![PowerShell variable](images/8.png)
 
 If you have used [bash](https://www.gnu.org/software/bash/manual/html_node/What-is-Bash_003f.html) in the past, PowerShell variables are very similar. In bash when calling a variable, you use a `$` sign.
 
@@ -105,13 +105,13 @@ In the previous section, you took a look at defining variables in PowerShell. No
 
 In Python, a `for` loop would look something like the below.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/58e7947d-da13-436a-a78a-047896669d64/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/58e7947d-da13-436a-a78a-047896669d64/Untitled.png)
+![Python For Loop](images/9.png)
 
 In PowerShell, `for` loops look way different. The reason why is because while Python is a white-space based language, PowerShell is a bracket-based language. Whitespacing doesn't matter in PowerShell as long as the code is in the brackets it's supposed to be in.
 
 Below you will see an example of a `for` loop in PowerShell.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aca85c77-2d02-40a0-a4b2-6e9eb817c358/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aca85c77-2d02-40a0-a4b2-6e9eb817c358/Untitled.png)
+![PowerShell For Loop](images/10.png)
 
 If you run the above, you'll notice that this will cause an infinite loop, which means the loop will keep running until you manually stop it. When it comes to `for` loops between Python and PowerShell, as you can see there are some key differences. 
 
@@ -123,13 +123,13 @@ Similar to the white-space vs bracket-based differences that you saw in the **Lo
 
 Below is an `if` statement in Python.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/315cd88f-0219-452d-b88e-45e66b8c0cd7/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/315cd88f-0219-452d-b88e-45e66b8c0cd7/Untitled.png)
+![Python If statement](images/11.png)
 
 Because there is an `H` in the `hello` variable, the output prints `Hi`
 
 In PowerShell, the output will be the same, but notice the bracket-based syntax and syntax differences.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/66f70975-f76f-4dfc-8734-02a17f1450e8/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/66f70975-f76f-4dfc-8734-02a17f1450e8/Untitled.png)
+![PowerShell If statement](images/12.png)
 
 There are some key differences between the Python and PowerShell `if` statement that are very important.
 
