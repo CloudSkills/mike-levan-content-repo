@@ -51,7 +51,7 @@ The parameters below will be used for passing in the resource group name to sear
     )
 ```
 
-![Parameters](images/2.jpg)
+![Parameters](images/2.png)
 
 ### Processing Input
 
@@ -77,7 +77,7 @@ The following code will be used to run a `variable` and `if` statement to check 
         }
 ```
 
-![Parameters](images/3.jpg)
+![Begin Process End Blocks](images/3.png)
 
 ### Core Code
 
@@ -93,7 +93,7 @@ The following code will be used to list the virtual machines and the sizes. Add 
             }
 ```
 
-![Parameters](images/4.jpg)
+![Core Code](images/4.png)
 
 ### Running the Code
 
@@ -103,7 +103,7 @@ Note that the resource group you use and the output you will see is going to be 
 
 Run the following code in VS Code by write clicking it and choosing *Run selection*.
 
-![Parameters](images/5.jpg)
+![Running the Code](images/5.png)
 
 Now that the code is initiated in VS Code, run the `List-VMSizes` function with the `$RGName` parameter to list out the virtual machine name and size.
 
@@ -113,7 +113,7 @@ Now that the code is initiated in VS Code, run the `List-VMSizes` function with 
 
 As you can see from the screenshot below, the VM name and size is printed to the screen.
 
-![Parameters](images/6.jpg)
+![Listing Results](images/6.png)
 
 Congratulations! You have successfully used both PowerShell and Azure CLI together in the same script to perform an automation function.
 
